@@ -1,0 +1,17 @@
+{
+  "name": "lite-runner",
+  "version": "1.0.0",
+  "description": "a simple job scheduler with these features: http interface, configurable metadata indexes, logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "test/tests.js"
+  },
+  "author": "Alan Synnestvedt",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "crypto": "0.0.3",
+    "express": "^4.15.2",
+    "nedb": "^1.8.0"
+  }
+}

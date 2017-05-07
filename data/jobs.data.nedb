@@ -1,0 +1,4 @@
+{"$$indexCreated":{"fieldName":"when","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"status","unique":false,"sparse":true}}
+{"$$indexCreated":{"fieldName":"metadata.hash","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"metadata.patientId","unique":false,"sparse":true}}
