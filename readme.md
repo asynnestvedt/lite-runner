@@ -16,3 +16,13 @@ edit `config/config.js` to set custom port, indexes, filenames and running inter
 API info
 
 > http://localhost:3333
+
+    Method	Path
+    GET	    /
+    POST	/jobs
+    GET	    /jobs/:filter?
+    DELETE	/jobs/:_ids
+    GET	    /log/:filter?
+    
+filter is an optional json that maps to a mongo query and must use strings for attribute names such as ` /jobs/{"type":"emailer"} `
+    
