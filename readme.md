@@ -32,4 +32,4 @@ API info
 ### Performance Notes ###
 in testing a 200 MB log with > 600,000 documents an unindexed log query for 30,000 documants returned in 2.003 seconds on a HP Spectre x360.
 
-node crashed due to lack of memory when simultaneously loading the databases and queuing 100,000 inserts.
+node crashed due to lack of memory when loading the databases (at > 600k docs) and simulatneously queuing 100,000 inserts.
