@@ -8,7 +8,8 @@
 		"5f8d8928-e03b-52b8-fef5-4e26cce6ba14",
 		"86f0befd-87f9-6c9a-8f44-f4ddcb7764a4",
 		"a08e2806-fb4e-180f-f7c7-253e93ebb353",
-		"cab5b588-d51b-70ab-0a6b-b9b6f085c06d"
+		"cab5b588-d51b-70ab-0a6b-b9b6f085c06d",
+		"959a37ca-4233-3b1c-6734-bc248f2ae12f"
 	],
 	"folders": [],
 	"timestamp": 1494116600572,
@@ -73,6 +74,25 @@
 			"collectionId": "ac0021bb-5ea4-1626-84ac-ae8d502d261d",
 			"responses": [],
 			"rawModeData": "{\n\t\"payload\":{\"subject\":\"hello\",\"body\":\"im a message\"},\n\t\"metadata\":{\"type\":\"SMS\", \"patientId\":\"mark\", \"creator\":\"alan\", \"subtype\":\"emergency alert\"},\n\t\"when\": 149412478,\n\t\"archive\": true\n}"
+		},
+		{
+			"id": "959a37ca-4233-3b1c-6734-bc248f2ae12f",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{BASEURL}}/log/{\"payload.noise\": {\"$gt\":0.98},\"status\":\"completed\"}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1494207237552,
+			"name": "Large Log query",
+			"description": "",
+			"collectionId": "ac0021bb-5ea4-1626-84ac-ae8d502d261d",
+			"responses": [],
+			"rawModeData": "{\n\t\"payload\":\"\",\n\t\"metadata\":{\"type\":\"SMS\", \"patientId\":\"alan\", \"creator\":\"alan\"},\n\t\"when\": 1494118478\n}"
 		},
 		{
 			"id": "a08e2806-fb4e-180f-f7c7-253e93ebb353",
