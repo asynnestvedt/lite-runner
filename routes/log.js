@@ -1,5 +1,5 @@
-module.exports = function(app) {
-    app.get('/log/:filter?', function (req, res) {
+module.exports = function(app, db) {
+    app.get('/log/:filter?', function (req, res, next) {
         let filter = {};
         try {
             filter = JSON.parse(req.params.filter || "{}");
@@ -8,7 +8,7 @@ module.exports = function(app) {
             return next(new Error(e.message));
         }
         
-        db.jobs_read(filter, null, null, function(err, jobdocs) {
+        db.log_read(filter, null, null, function(err, jobdocs) {
             if(!err) {
                 res.type('json').status(200).send(JSON.stringify(jobdocs));
             } else {
